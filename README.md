@@ -26,7 +26,7 @@ sudo apt install docker-compose
 ```
 sudo apt install mariadb-client
 ```
-### Start by clonning this [maxscale-docker repository](https://github.com/luma24/maxscale-docker) by running this command on the terminal.
+### Start clonning this [maxscale-docker repository](https://github.com/luma24/maxscale-docker) by running this command on the terminal.
 ```
 git clone https://github.com/luma24/maxscale-docker
 cd maxscale-docker/maxscale/
