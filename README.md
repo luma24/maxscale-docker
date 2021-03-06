@@ -129,10 +129,8 @@ MariaDB [(none)]> SELECT * FROM zipcodes_two.zipcodes_two LIMIT 10;
 |   41139 | STANDARD    | FLATWOODS   | KY    | PRIMARY      | 38.51     | -82.72     | NA-US-KY-FLATWOODS   | FALSE         | 3692            | 6748                | 121902277  |
 +---------+-------------+-------------+-------+--------------+-----------+------------+----------------------+---------------+------
 ```
-### Use this command ```SELECT Zipcode FROM zipcodes_one.zipcodes_one ORDER BY Zipcode DESC LIMIT 1; ```to query the largest zipcode number in zipcodes_one
-```
-SELECT Zipcode FROM zipcodes_one.zipcodes_one ORDER BY Zipcode DESC LIMIT 1;
-```
+### Use this command ```SELECT Zipcode FROM zipcodes_one.zipcodes_one ORDER BY Zipcode DESC LIMIT 1; ```to view the largest zipcode number in zipcodes_one
+
 ```
 MariaDB [(none)]> SELECT Zipcode FROM zipcodes_one.zipcodes_one ORDER BY Zipcode DESC LIMIT 1;
 +---------+
@@ -143,9 +141,7 @@ MariaDB [(none)]> SELECT Zipcode FROM zipcodes_one.zipcodes_one ORDER BY Zipcode
 
 ```
 ### Use this command ```SELECT Zipcode FROM zipcodes_two.zipcodes_two ORDER BY Zipcode ASC LIMIT 1; ```  To view the smallest zipcode number in zipcodes_two
-```
-SELECT Zipcode FROM zipcodes_two.zipcodes_two ORDER BY Zipcode ASC LIMIT 1;
-```
+
 ```
 MariaDB [(none)]> SELECT Zipcode FROM zipcodes_two.zipcodes_two ORDER BY Zipcode ASC LIMIT 1;
 +---------+
@@ -160,3 +156,7 @@ Once complete, to remove the cluster and maxscale containers:
 ```
 docker-compose down -v
 ```
+### Sources:
+(https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
+(https://docs.docker.com/compose/install/)
+(https://mariadb.com/kb/en/mariadb-maxscale-25-simple-sharding-with-two-servers/)
