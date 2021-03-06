@@ -132,7 +132,9 @@ MariaDB [(none)]> SELECT * FROM zipcodes_two.zipcodes_two LIMIT 10;
 ### Use this command ```SELECT Zipcode FROM zipcodes_one.zipcodes_one ORDER BY Zipcode DESC LIMIT 1; ```to query the largest zipcode number in zipcodes_one
 ```
 SELECT Zipcode FROM zipcodes_one.zipcodes_one ORDER BY Zipcode DESC LIMIT 1;
-
+```
+```
+MariaDB [(none)]> SELECT Zipcode FROM zipcodes_one.zipcodes_one ORDER BY Zipcode DESC LIMIT 1;
 +---------+
 | Zipcode |
 +---------+
@@ -143,7 +145,9 @@ SELECT Zipcode FROM zipcodes_one.zipcodes_one ORDER BY Zipcode DESC LIMIT 1;
 ### Use this command ```SELECT Zipcode FROM zipcodes_two.zipcodes_two ORDER BY Zipcode ASC LIMIT 1; ```  To view the smallest zipcode number in zipcodes_two
 ```
 SELECT Zipcode FROM zipcodes_two.zipcodes_two ORDER BY Zipcode ASC LIMIT 1;
-
+```
+```
+MariaDB [(none)]> SELECT Zipcode FROM zipcodes_two.zipcodes_two ORDER BY Zipcode ASC LIMIT 1;
 +---------+
 | Zipcode |
 +---------+
