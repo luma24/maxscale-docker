@@ -29,6 +29,9 @@ sudo apt install mariadb-client
 ### Start clonning this [maxscale-docker repository](https://github.com/luma24/maxscale-docker) by running this command on the terminal.
 ```
 git clone https://github.com/luma24/maxscale-docker
+```
+#### Then navigate to maxscale-docker/maxscale/ directory by running this command:
+```
 cd maxscale-docker/maxscale/
 ```
 ### To bring the containers up:
@@ -54,10 +57,11 @@ docker-compose exec maxscale maxctrl list servers
 │ zip_master_two │ master2 │ 3306 │ 0           │ Running         │ 0-3000-31 │
 └────────────────┴─────────┴──────┴─────────────┴─────────────────┴───────────┘
 ```
-### Run this command to check that the zipcodes_one and zipcodes_two databases there.
+### Run this command to connect to mariadb using the username: maxuser, maxpwd as a password and that will be on the port 4000
 ```
 mariadb -umaxuser -pmaxpwd -h 127.0.0.1 -P 4000
 ```
+
 ```
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
 Your MariaDB connection id is 1
@@ -67,6 +71,13 @@ Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
 
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
+MariaDB [(none)]> 
+
+```
+### When you successfully navigate to mariadb use this command ```show databases;``` to check that the zipcodes_one and zipcodes_two databases there
+
+
+```
 MariaDB [(none)]> show databases;
 +--------------------+
 | Database           |
