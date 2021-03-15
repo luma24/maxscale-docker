@@ -24,3 +24,9 @@ router=schemarouter
 servers=zip_master_one,zip_master_two
 user=maxuser
 password=maxpwd
+
+[Sharded-Service-Listener]
+type=listener
+service=Sharded-Service
+protocol=MariaDBClient
+port=4000
